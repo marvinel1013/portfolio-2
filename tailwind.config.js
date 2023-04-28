@@ -25,6 +25,13 @@ module.exports = {
         float: "float 5s ease-in-out infinite",
         spinSlow: "spin 13s linear infinite",
       },
+
+      backgroundImage: {
+        circularLight:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #ffff 5px, #ffff 50px)",
+        circularDark:
+          "repeating-radial-gradient(#ffff 2px, #1b1b1b 5px, #1b1b1b 50px)",
+      },
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ import SocialMedIcon from "./SocialMedIcon";
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between h-[70px] lg:h-24 w-full px-3 md:px-4 lg:px-8 xl:px-20 bg-slate-300">
+    <nav className="flex items-center justify-between h-[70px] lg:h-24 w-full px-3 md:px-4 lg:px-8 xl:px-20">
       <div className="hidden lg:flex">
         <NavLink />
       </div>
