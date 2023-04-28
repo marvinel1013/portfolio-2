@@ -70,7 +70,7 @@ const Experience = () => {
           </li>
         </ul>
       </div>
-      <div className="cursor-pointer text-right">
+      <div className="cursor-pointer text-right text-sm md:text-base ">
         <u onClick={scrollTop}>Back to Top</u>
       </div>
     </div>
