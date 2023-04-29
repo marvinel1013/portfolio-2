@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <link rel="icon" href="/MLogo.png" />
-      <body className="bg-light">
+      <body className="bg-light dark:bg-dark">
         <Main />
         <NextScript />
       </body>

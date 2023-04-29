@@ -1,5 +1,6 @@
 import ContactDetails from "@/components/Contact/ContactDetails";
 import ContactForm from "@/components/Contact/ContactForm";
+import TransitionEffect from "@/components/Effect/TransitionEffect";
 import Text from "@/components/Reusable/Text";
 import Head from "next/head";
 import React from "react";
@@ -10,6 +11,7 @@ function Contact() {
       <Head>
         <title>Marvinel Santos | Contact Page</title>
       </Head>
+      <TransitionEffect />
       <div className="min-h-screen w-full text-dark pb-40 lg:px-8 xl:px-24">
         <Text className="mt-5 md:mt-10 text-4xl md:text-6xl lg:text-7xl xl:text-8xl px-12 xl:px-72 lg:px-48 text-center font-extrabold">
           Get In Touch Let's Talk

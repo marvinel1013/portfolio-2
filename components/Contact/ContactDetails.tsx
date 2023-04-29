@@ -38,13 +38,13 @@ const ContactDetails = () => {
           priority
           className="rounded-2xl border border-gray-500"
         />
-        <h1 className="text-2xl md:text-3xl font-extrabold mt-5 text-primary">
+        <h1 className="text-2xl md:text-3xl font-extrabold mt-5 text-primary dark:text-secondary">
           Marvinel Santos
         </h1>
         <h2 className="text-gray-700 md:text-lg dark:text-gray-400 mb-5">
           Front-End Developer
         </h2>
-        <p className="md:text-lg">
+        <p className="md:text-lg text-dark dark:text-light">
           I am available for full-time positions. Contact me and let's talk.
         </p>
       </div>

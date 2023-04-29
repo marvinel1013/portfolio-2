@@ -16,7 +16,7 @@ type Props = {
 
 const ProjectsCards = ({ data }: Props) => {
   return (
-    <div className="relative bg-white flex items-center lg:gap-7 justify-between lg:flex-row flex-col border-2 border-dark md:p-6 p-4 rounded-xl mb-16">
+    <div className="relative bg-white dark:bg-dark flex items-center lg:gap-7 justify-between lg:flex-row flex-col border-2 border-dark dark:border-light md:p-6 p-4 rounded-xl mb-16">
       <div className="absolute top-0 -right-3 md:-right-4 -z-10 md:w-[102%] w-[103%] h-[103%] lg:h-[105%] rounded-xl rounded-tr-3xl rounded-bl-3xl bg-dark dark:bg-light" />
       <Image
         src={data.coverPhoto}
@@ -26,7 +26,9 @@ const ProjectsCards = ({ data }: Props) => {
       />
 
       <div>
-        <h1 className="mt-2 text-primary md:text-xl font-bold">{data.title}</h1>
+        <h1 className="mt-2 text-primary dark:text-secondary md:text-xl font-bold">
+          {data.title}
+        </h1>
         <h2 className="text-gray-500 text-sm md:text-base mb-4">
           {data.subtitle}
         </h2>

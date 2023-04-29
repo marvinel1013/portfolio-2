@@ -5,6 +5,7 @@ import Text from "@/components/Reusable/Text";
 import { Icon } from "@iconify/react";
 import Button from "@/components/Reusable/Button";
 import HireMe from "@/components/HireMe/HireMe";
+import TransitionEffect from "@/components/Effect/TransitionEffect";
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
       <Head>
         <title>Marvinel Santos | Portfolio</title>
       </Head>
-      <div className="min-h-screen w-full text-dark">
+      <TransitionEffect />
+      <div className="min-h-screen w-full text-dark dark:text-light">
         <div className="h-full w-full items-center flex flex-col lg:flex-row lg:gap-10 xl:gap-20 px-3 xl:px-20 mt-5 lg:mt-12 xl:mt-24 md:mt-20">
           <Image
             src={HeroImage}

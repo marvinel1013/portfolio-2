@@ -5,6 +5,7 @@ import Image from "next/image";
 import Skills from "@/components/About/Skills/Skills";
 import Education from "@/components/About/Education";
 import Experience from "@/components/About/Experience";
+import TransitionEffect from "@/components/Effect/TransitionEffect";
 
 function About() {
   return (
@@ -12,7 +13,8 @@ function About() {
       <Head>
         <title>Marvinel Santos | About Page</title>
       </Head>
-      <div className="min-h-screen w-full text-dark">
+      <TransitionEffect />
+      <div className="min-h-screen w-full text-dark dark:text-light">
         <Text className="mt-5 md:mt-10 text-4xl md:text-6xl lg:text-7xl xl:text-8xl xl:px-52 lg:px-48 text-center font-extrabold">
           Passion Fuels Purpose!
         </Text>
