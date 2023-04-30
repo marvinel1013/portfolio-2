@@ -6,6 +6,7 @@ import { Icon } from "@iconify/react";
 import Button from "@/components/Reusable/Button";
 import HireMe from "@/components/HireMe/HireMe";
 import TransitionEffect from "@/components/Effect/TransitionEffect";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -35,17 +36,19 @@ const Home = () => {
             </p>
 
             <div className="flex items-center justify-center lg:justify-start gap-4 lg:gap-7">
-              <Button className="mt-5 p-2 xl:p-3 rounded-lg h-fit">
-                <span className="flex items-center gap-2 cursor-pointer">
-                  <h3 className="text-sm md:text-base xl:text-lg">
-                    Download CV
-                  </h3>
-                  <Icon
-                    icon="line-md:download-loop"
-                    className="text-lg md:text-xl lg:text-2xl xl:text-3xl"
-                  />
-                </span>
-              </Button>
+              <Link href="/Marvinel-CV.pdf" download={true} target="_blank">
+                <Button className="mt-5 p-2 xl:p-3 rounded-lg h-fit">
+                  <span className="flex items-center gap-2 cursor-pointer">
+                    <h3 className="text-sm md:text-base xl:text-lg">
+                      Download CV
+                    </h3>
+                    <Icon
+                      icon="line-md:download-loop"
+                      className="text-lg md:text-xl lg:text-2xl xl:text-3xl"
+                    />
+                  </span>
+                </Button>
+              </Link>
 
               <a
                 href="mailto:1013marvinel@gmail.com"
