@@ -1,18 +1,24 @@
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
+import { Dispatch, SetStateAction } from "react";
 
 type Props = {
   className: string;
-  handleOpenMenu: any;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-const Logo = ({ className, handleOpenMenu }: Props) => {
+const Logo = ({ className, setIsOpen }: Props) => {
   const router = useRouter();
 
+  const handleNavigate = () => {
+    setIsOpen(false);
+    router.push("/");
+  };
+
   return (
-    <div onClick={handleOpenMenu} className="flex items-center gap-2">
+    <div className="flex items-center gap-2">
       <motion.div
-        onClick={() => router.push("/")}
+        onClick={handleNavigate}
         className={`${className} flex cursor-pointer items-center justify-center rounded-full dark:border-2 border-light bg-dark font-bold text-light`}
         whileHover={{
           backgroundColor: [
