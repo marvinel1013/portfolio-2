@@ -83,7 +83,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="mt-2 h-full w-full">
-          <Button className="w-full p-3 lg:text-lg lg:p-4 rounded-md dark:bg-black dark:text-light">
+          <Button className="w-full p-3 lg:text-lg lg:p-4 rounded-md dark:text-dark">
             Let's Talk
           </Button>
         </div>
